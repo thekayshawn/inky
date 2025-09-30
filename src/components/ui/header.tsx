@@ -14,14 +14,24 @@ import ThemeToggle from "./theme-toggle";
 export default function Header() {
   return (
     <nav className="bg-background h-16 border-b">
-      <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="flex h-full items-center justify-between px-4">
         <div className="flex items-center gap-8">
           <Logo />
         </div>
         <div className="flex items-center gap-3">
+          <Button size="icon" asChild variant="outline">
+            <a
+              rel="noopener noreferrer"
+              href={config.links.github}
+              target="_blank"
+            >
+              <Github />
+            </a>
+          </Button>
+          <ThemeToggle />
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline">About</Button>
+              <Button>About</Button>
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>
@@ -36,7 +46,7 @@ export default function Header() {
               </p>
               <p>
                 No more second guessing what your email will look like in
-                SendGrid or AWS SES, do once, do right.
+                SendGrid or AWS SES. Do it once, do it right.
               </p>
               <img
                 src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGs5c2o2czEwb3NvZ25wMzhrYWgwZm9vMDl5cW5kZnFoOXl0MDhuMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10UUe8ZsLnaqwo/giphy.gif"
@@ -44,6 +54,18 @@ export default function Header() {
                 className="mt-2"
               />
               <p className="mt-2">
+                Inspired by{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href={config.attributions.inspiredBy.link}
+                  target="_blank"
+                  className="text-primary underline"
+                >
+                  {config.attributions.inspiredBy.name}'s
+                </a>{" "}
+                work.
+              </p>
+              <p>
                 I'm {config.author.name}, you can fine me{" "}
                 <a
                   rel="noopener noreferrer"
@@ -53,20 +75,11 @@ export default function Header() {
                 >
                   here
                 </a>
-                , thanks!
+                , I'm making a ton more fun stuff as well. Thanks for stopping
+                by!
               </p>
             </DialogContent>
           </Dialog>
-          <Button size="icon" asChild variant="outline">
-            <a
-              rel="noopener noreferrer"
-              href={config.links.github}
-              target="_blank"
-            >
-              <Github />
-            </a>
-          </Button>
-          <ThemeToggle />
         </div>
       </div>
     </nav>

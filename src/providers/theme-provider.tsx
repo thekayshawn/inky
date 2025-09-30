@@ -30,7 +30,7 @@ export default function ThemeProvider({
   const storageKeyToUse = `${config.key}.${storageKey}`;
 
   const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKeyToUse) as Theme) || defaultTheme
+    () => (localStorage.getItem(storageKeyToUse) as Theme) || defaultTheme,
   );
 
   useEffect(() => {
@@ -38,11 +38,7 @@ export default function ThemeProvider({
     root.classList.remove("light", "dark");
 
     if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
-
+      const systemTheme = getSystemTheme();
       root.classList.add(systemTheme);
       return;
     }
@@ -65,5 +61,10 @@ export default function ThemeProvider({
   );
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
+export function getSystemTheme() {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
+
 export const useTheme = () => useContext(ThemeProviderContext);
