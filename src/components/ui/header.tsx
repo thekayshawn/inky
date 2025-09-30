@@ -1,9 +1,9 @@
+import { config } from "@/config";
 import { Github } from "lucide-react";
 import Button from "./button";
 import Dialog, {
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -13,8 +13,8 @@ import ThemeToggle from "./theme-toggle";
 
 export default function Header() {
   return (
-    <nav className="h-16 bg-background border-b">
-      <div className="h-full flex items-center justify-between container mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-background h-16 border-b">
+      <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-8">
           <Logo />
         </div>
@@ -44,12 +44,12 @@ export default function Header() {
                 className="mt-2"
               />
               <p className="mt-2">
-                I'm Kashan, you can fine me{" "}
+                I'm {config.author.name}, you can fine me{" "}
                 <a
                   rel="noopener noreferrer"
-                  href="https://kashanahmad.me?ref=inky.pages.dev"
+                  href={config.author.link}
                   target="_blank"
-                  className="underline text-primary"
+                  className="text-primary underline"
                 >
                   here
                 </a>
@@ -60,7 +60,7 @@ export default function Header() {
           <Button size="icon" asChild variant="outline">
             <a
               rel="noopener noreferrer"
-              href="https://github.com/thekayshawn/inky?ref=inky.pages.dev"
+              href={config.links.github}
               target="_blank"
             >
               <Github />
