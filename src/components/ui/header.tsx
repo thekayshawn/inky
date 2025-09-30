@@ -63,7 +63,16 @@ export default function Header() {
                 >
                   Jack Bridger's
                 </a>{" "}
-                work.
+                work, please{" "}
+                <a
+                  rel="noopener noreferrer"
+                  href={`https://github.com/thekayshawn/inky?ref=${config.site}`}
+                  target="_blank"
+                  className="text-primary underline"
+                >
+                  star Inky
+                </a>{" "}
+                on GitHub if you like it and want more features to be added.
               </p>
               <p>
                 I'm Kashan, you can fine me{" "}
@@ -78,6 +87,14 @@ export default function Header() {
                 , I'm making a ton more fun stuff as well. Thanks for stopping
                 by!
               </p>
+              <div>
+                <h3 className="text-muted-foreground text-sm">Roadmap</h3>
+                <ul className="list-disc pl-4">
+                  <li>Send test emails</li>
+                  <li>Manage templates</li>
+                  <li>Template marketplace</li>
+                </ul>
+              </div>
             </DialogContent>
           </Dialog>
         </div>
