@@ -1,8 +1,6 @@
 ![Inky's logo](./public/favicon-96x96.png)
 
-**Inky** is a simple email templates creator with support for Handlebars.
-
-Inky is a simple code editor where you can copy/paste your HTML email template with your data and see the compiled output.
+**Inky** is a simple code editor where you can copy/paste your HTML email template with your data and see the compiled output.
 
 No more second guessing what your email will look like in SendGrid or AWS SES. Do it once, do it right.
 
