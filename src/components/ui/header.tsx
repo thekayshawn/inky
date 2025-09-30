@@ -75,7 +75,7 @@ export default function Header() {
                 on GitHub if you like it and want more features to be added.
               </p>
               <p>
-                I'm Kashan, you can fine me{" "}
+                I'm Kashan, you can find me{" "}
                 <a
                   rel="noopener noreferrer"
                   href={`https://kashanahmad.me?ref=${config.site}`}
