@@ -6,11 +6,11 @@ export const html = `<!DOCTYPE html>
     .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
     .header { background-color: #FF5722; color: white; padding: 30px; text-align: center; }
     .content { padding: 30px; }
-    .alert-box { padding: 20px; border-radius: 5px; margin: 20px 0; }
+    .alert-box { padding: 20px; margin: 20px 0; border: 1px solid #ddd; }
     .alert-warning { background-color: #fff3cd; border-left: 4px solid #ffc107; }
     .alert-success { background-color: #d4edda; border-left: 4px solid #28a745; }
-    .button { display: inline-block; padding: 12px 30px; background-color: #FF5722; color: white; text-decoration: none; border-radius: 5px; margin: 20px 0; }
-    .metric { display: inline-block; width: 30%; text-align: center; padding: 20px; margin: 5px; background-color: #f5f5f5; border-radius: 5px; }
+    .button { display: inline-block; padding: 12px 30px; background-color: #FF5722; color: white; text-decoration: none; margin: 20px 0; }
+    .metric { display: inline-block; width: 30%; text-align: center; padding: 20px; margin: 5px; background-color: #f5f5f5; border: 1px solid #ddd; }
     .metric-value { font-size: 32px; font-weight: bold; color: #FF5722; }
     .metric-label { font-size: 14px; color: #666; margin-top: 5px; }
     .footer { background-color: #333; color: #999; padding: 20px; text-align: center; font-size: 12px; }

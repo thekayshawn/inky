@@ -6,7 +6,7 @@ export const html = `<!DOCTYPE html>
     .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
     .header { background-color: #2196F3; color: white; padding: 30px; text-align: center; }
     .content { padding: 30px; }
-    .order-info { background-color: #f5f5f5; padding: 20px; border-radius: 5px; margin: 20px 0; }
+    .order-info { background-color: #f5f5f5; padding: 20px; margin: 20px 0; border: 1px solid #ddd; }
     .order-info p { margin: 5px 0; }
     .items-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
     .items-table th { background-color: #f5f5f5; padding: 12px; text-align: left; border-bottom: 2px solid #ddd; }

@@ -22,7 +22,7 @@ export default function Header() {
           <Button size="icon" asChild variant="outline">
             <a
               rel="noopener noreferrer"
-              href={config.links.github}
+              href={`https://github.com/thekayshawn/inky?ref=${config.site}`}
               target="_blank"
             >
               <Github />
@@ -57,19 +57,19 @@ export default function Header() {
                 Inspired by{" "}
                 <a
                   rel="noopener noreferrer"
-                  href={config.attributions.inspiredBy.link}
+                  href={`https://handlebars-email-html-previewer.vercel.app?ref=${config.site}`}
                   target="_blank"
                   className="text-primary underline"
                 >
-                  {config.attributions.inspiredBy.name}'s
+                  Jack Bridger's
                 </a>{" "}
                 work.
               </p>
               <p>
-                I'm {config.author.name}, you can fine me{" "}
+                I'm Kashan, you can fine me{" "}
                 <a
                   rel="noopener noreferrer"
-                  href={config.author.link}
+                  href={`https://kashanahmad.me?ref=${config.site}`}
                   target="_blank"
                   className="text-primary underline"
                 >
